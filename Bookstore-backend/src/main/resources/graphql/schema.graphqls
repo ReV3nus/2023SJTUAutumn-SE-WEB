@@ -1,0 +1,14 @@
+type Query {
+    findBooksByName(name: String!): [MG_Book]
+}
+type MG_Book {
+    bookId: Int
+    isbn: String
+    name: String
+    type: String
+    author: String
+    price: Float
+    description: String
+    inventory: Int
+    image: String
+}
